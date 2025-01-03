@@ -1,13 +1,14 @@
 ---
 import "../styles/global.css";
+import Header from "./Header.astro";
+import Footer from './Footer.astro';
 const pageTitle = "Paguina de inicio";
 ---
 
 <div id="container">
 	<h1>{pageTitle}</h1>
-	<a href="/">Inicio</a>
-	<a href="/about/">Sobre mi</a>
-	<a href="/blog/">Blog</a>
+	<Header />
+	<Footer />
 </div>
 
 <style>

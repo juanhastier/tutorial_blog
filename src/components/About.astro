@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Header from "./Header.astro";
+import Footer from './Footer.astro';
 
 const pageTitle = "Sobre mi";
 
@@ -22,9 +24,7 @@ const textCase = "uppercase";
 <div id="container">
   <h1>{pageTitle}</h1>
   <h2>... ¡y mi nuevo sitio Astro!</h2>
-  <a href="/">Inicio</a>
-  <a href="/about/">Sobre mi</a>
-  <a href="/blog/">Blog</a>
+  <Header/>
 
   <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
 
@@ -44,6 +44,7 @@ const textCase = "uppercase";
   {happy && <p>Estoy feliz de aprender Astro!</p>}
   {finished && <p>He terminado este tutorial!</p>}
   {goal === 3 ? <p>Mi objetivo es terminar en 3 dias.</p> : <p>Mi objetivo no son 3 dias</p>}
+  <Footer />
 </div>
 
 <style define:vars={{skillColor, fontWeight, textCase}}>
