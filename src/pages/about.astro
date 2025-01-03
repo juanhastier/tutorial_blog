@@ -1,8 +1,10 @@
 ---
 import AboutComponent from '../components/About.astro';
 import Layout from '../layouts/Layout.astro';
+
+const pageTitle = "Mi blog de Astro aprendizaje";
 ---
 
-<Layout>
+<Layout pageTitle={pageTitle}>
 	<AboutComponent />
 </Layout>
